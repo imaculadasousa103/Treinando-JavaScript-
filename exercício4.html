@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade</title>
+    <style>
+        .idade{
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+<section class="idade">
+    <div>
+        <h1>Verificando se você é maior de idade ou não!</h1>
+        <button class="but" id="teste" onclick="clicar()">Vamos começar?</button>
+        
+    </div>
+</section>
+<script>
+      function clicar(){
+      var n1 = window.prompt("Qual a sua idade?")
+      
+      if ((n1 < 18)) mensagem = "Você é menor de idade!"
+      else
+      if((n1 > 18)) mensagem = "Você é maior de idade!"
+      alert(mensagem);
+      }
+</script>
+</body>
+</html>
