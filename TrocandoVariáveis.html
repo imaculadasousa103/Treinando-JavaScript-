@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <style>
+        .sessão{
+            margin-top: 5%;
+        }
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 15%;
+        }
+        .butaum{
+            margin-top: 7%;
+            text-align: center;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <section class="sessão">
+        <h1> Trocando valores de variáveis</h1>
+        <div class="butaum">
+        <button class="butão" id="but" onclick="clicar()">clique em mim</button>
+         </div>
+    </section>
+    <script>
+        function clicar(){
+        var n1 = parseInt(prompt("Digite um número:"));
+        var n2 = parseInt(prompt("Digite um número:"));
+        
+        alert("Números iniciais: "+n1+" " +"e " +n2 + ";");
+
+        var aux = n1;
+        n1 = n2;
+        n2 = aux;
+        alert("Números finais: "+n1+" " +"e " +n2 + ";");
+
+        }
+
+        </script>
+
+
+
+
+</body>
+</html>
